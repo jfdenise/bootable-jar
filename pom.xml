@@ -18,7 +18,7 @@
 
     <properties>
 <!--        <version.bootable.jar>2.0.0.Beta8-SNAPSHOT</version.bootable.jar>-->
-        <version.bootable.jar>2.0.0.Beta7</version.bootable.jar>
+        <version.bootable.jar>2.0.0.Beta8</version.bootable.jar>
         <version.wildfly>21.0.0.Beta1</version.wildfly>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -63,6 +63,11 @@
                         </cli-session>
                     </cli-sessions>
                     <cloud/>
+		<plugin-options>
+
+  <jboss-fork-embedded>true</jboss-fork-embedded>
+
+</plugin-options>
                 </configuration>
                 <executions>
                     <execution>
